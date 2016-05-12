@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>二战</title>
+    <script type="text/javascript" src="styles/common.js"></script>
+    <script type="text/javascript" src="styles/jquery.js"></script>
+    <link type="text/css" href="styles/main.css" rel="stylesheet"/>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            function show() {
+                $.getJSON("/wait/" + Math.random(), function (d) {
+                    if (d) {
+                        if (d.flag == 1) {
+                            window.location.href = "/";
+                        }
+                        else {
+                            $("#dis").html("<img height=\"24px\" src=\"styles/loading.gif\">当前等待人数" + d.num + " 。。。请等待");
+                        }
+                    }
+                });
+            }
+
+            var tmp = getCookie('Q');
+            if (tmp) {
+                show();
+                setInterval(show, 5000);// 注意函数名没有引号和括弧！
+            }
+        });
+        //!]]>
+    </script>
+</head>
+<body>
+
+<div id="page">
+    <div id="dis"
+         style="padding-top: 10%; margin: auto; align: center; color: #FFFFFF; font-size: 24px">
+
+    </div>
+</body>
+</html>

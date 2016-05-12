@@ -1,0 +1,173 @@
+html, body {
+    height: 100%;
+}
+
+.glowBlack {
+    display: block;
+    filter: Dropshadow(offx=1, offy=0, color=black) Dropshadow(offx=0, offy=1, color=black) Dropshadow(offx=0, offy=-1, color=black) Dropshadow(offx=-1, offy=0, color=black);
+    text-shadow: black 1px 0 0, black 0 1px 0, black -1px 0 0, black 0 -1px 0;
+}
+
+.fright {
+    float: right;
+}
+
+#dcollect {
+    margin: 19px 0px 0px;
+    height: 26px;
+    width: 112px;
+}
+
+a.addCollection {
+    color: #7b7c7a;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000 url('bg.jpg') no-repeat 0 -25px;
+    text-indent: 30px;
+    text-decoration: none;
+    padding: auto auto;
+    line-height: 26px;
+}
+
+a.addCollection:hover {
+    background: url('bg.jpg') no-repeat -112px -25px;
+}
+
+body, div {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+#maincont {
+    width: 100% px;
+    height: 100%;
+    min-height: 200px;
+    background-color: black;
+    _text-align: center;
+}
+
+#top_tab {
+    width: 100%;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#content {
+    height: auto;
+    width: 400px;
+    clear: both;
+    border: 1px solid #000;
+    line-height: auto;
+}
+
+#footer {
+    width: 100%;
+    background-color: #000;
+    clear: both;
+}
+
+#footer p {
+    margin: 10px auto;
+}
+
+#footer p a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+#contentp {
+    clear: both;
+    _text-align: center;
+}
+
+#top_tab ul {
+    list-style: none;
+    padding: none;
+    margin: 0px;
+}
+
+#top_tab .gm_logo {
+    background-color: #f00;
+    float: left;
+    text-indent: -9999px;
+    background: url('logo.png') no-repeat center 0px;
+    width: 100px;
+    height: 45px;
+}
+
+#top_tab ul li {
+    float: left;
+    padding: 0px auto;
+    margin: 20px 5px 0px 0px;
+    height: 25px;
+    width: 70px;
+    background-color: #00aaaa;
+    text-align: center;
+    line-height: 25px;
+}
+
+#top_tab ul li a {
+    display: block;
+    width: 70px;
+    height: 25px;
+    text-decoration: none;
+    color: #dee1e1;
+    background: #000 url("bg.jpg") no-repeat;
+    text-align: center;
+}
+
+#top_tab ul li a:hover {
+    color: #ffe247;
+    background: url("bg.jpg") no-repeat -70px 0px;
+}
+
+#top_tab ul li a:visited {
+    color: #dee1e1;
+}
+
+#top_tab ul li a span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#top_tab ul li a:hover span {
+    color: #ffe247;
+}
+
+* {
+    font-family: "����", "Tahoma", "Sans", "Arial";
+    font-size: 12px;
+}
+
+.link {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+#game_flash {
+    max-width: 1400px;
+    max-height: 900px;
+    margin: 0 auto;
+    border: 0px;
+    width: auto;
+    height: auto;
+    width: expression((     document.body.clientWidth >     1400 ?     1400 :
+		  document.body.clientWidth) +     "px" );
+    height: expression((     document.body.clientHeight >     900 ?     900 :
+		  document.body.clientHeight) +     "px" );
+}
+
+#page {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    clear: both;
+    _text-align: center;
+}

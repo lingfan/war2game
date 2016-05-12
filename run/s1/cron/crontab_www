@@ -1,0 +1,2 @@
+#每1分钟统计一次
+* * * * * /opt/ww2/run/cron/CronPerMin.php

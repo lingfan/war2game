@@ -1,0 +1,2 @@
+#每1小时同步时间
+10 * * * * /usr/sbin/ntpdate time.windows.com
